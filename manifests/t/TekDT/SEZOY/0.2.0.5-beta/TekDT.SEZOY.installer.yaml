@@ -1,0 +1,31 @@
+# Created using wingetcreate 1.12.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: TekDT.SEZOY
+PackageVersion: 0.2.0.5-beta
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.17763.0
+InstallerType: msi
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Silent: /qn /norestart
+  SilentWithProgress: /qb /norestart
+  Interactive: /qb+ /norestart
+UpgradeBehavior: uninstallPrevious
+Installers:
+- Architecture: x64
+  Scope: user
+  InstallerUrl: https://github.com/tekdt/sezoybin/releases/download/v0.2.0.5-beta/SEZOY_beta.msi
+  InstallerSha256: AFFEDE877DBB38F3EF107C2FCE92F2C7BC4601F3B50B2A4FD47224B68E8D5EA6
+  AppsAndFeaturesEntries:
+  - DisplayName: SEZOY
+    Publisher: TekDT
+    DisplayVersion: 0.2.0.5-beta
+ManifestType: installer
+ManifestVersion: 1.12.0
+ReleaseDate: 2026-09-26

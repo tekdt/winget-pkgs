@@ -25,7 +25,6 @@ Installers:
   AppsAndFeaturesEntries:
   - DisplayName: SEZOY
     Publisher: TekDT
-    DisplayVersion: 0.2.0.6-beta
 ManifestType: installer
 ManifestVersion: 1.12.0
 ReleaseDate: 2026-09-29
